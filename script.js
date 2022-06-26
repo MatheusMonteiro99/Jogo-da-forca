@@ -283,7 +283,7 @@ function escolheLetra(letra) {
     
     if (acertou === false) {
         imagem++;
-        document.getElementById("forca").src = "images/forca-"+imagem+".PNG";
+        document.getElementById("forca").src = "images/forca-"+imagem+".png";
 
         var botao = document.getElementById(letra);
         botao.setAttribute('class', 'errada');
