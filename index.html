@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="flex-container-1">
         <h1>Jogo da Forca</h1>
     </header>
-    <section class="flex-container-4">
-        <h2>Tema: Programação</h2>
-    </section>
     <section class="flex-container-2">
-        <img id="forca" src="images/forca.jpg" alt="Forca">
-        <div id="palavra" class="flex-container-2-2">
+        <div id="tema-box">
+            <h2 id="tema"></h2>
         </div>
-        <div id="novo"></div>
     </section>
-    <section id="letras" class="flex-container-3">   
+        <section class="flex-container-3">
+            <img id="forca" src="images/forca.png" alt="Forca">
+            <div id="palavra" class="flex-container-3-2"></div>
+            <div id="novo"></div>
+        </section>
+        <section class="flex-container-5">
+            <div id="palavra-inteira" class="flex-container-5-2">
+                <h2>Digite a palavra:</h2>
+                <input type="text" id="input-style" class="input-style">
+                <input type="submit" id="input-btn" class="input-btn" name="" value="FINALIZAR">
+            </div>
+        </section>
+    <section id="letras" class="flex-container-4">   
     </section>
     <script src="script.js"></script
 </body>
