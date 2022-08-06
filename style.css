@@ -1,9 +1,13 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
-body {
-    color: #00698C;
 
+.title {
+    color: #00698C;
+}
+
+.digite {
+    color: #00698C;
 }
 
 .flex-container-1 {
@@ -75,6 +79,11 @@ body {
     font-size: 18px;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all ease 0.25s;
+}
+
+.input-btn:hover {
+    background-color: #0682ac;
 }
 
 h1 {
@@ -89,7 +98,8 @@ p {
 span {
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #DC1F27;
+    border-bottom: 3px solid #00698C;
+    color: #00698C;
     width: 40px;
     margin: 5px;
     padding-bottom: 10px;
@@ -113,6 +123,7 @@ button {
     font-size: 18px;
     cursor: pointer;
     text-transform: uppercase;
+
 }
 
 button:hover {
@@ -122,6 +133,12 @@ button:hover {
 button.novo-bt {
     width: auto;
     padding: 10px;
+    background-color: #00698C;
+    transition: all ease 0.25s;
+}
+
+button.novo-bt:hover {
+    background-color: #0682ac;
 }
 
 .certa, .certa:hover {

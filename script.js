@@ -1,214 +1,40 @@
-const palavras = [
-    palavra001 = {
-        nome: "IRLANDA",
-        categoria:"LUGARES"
-    },
-    palavra002 = {
-        nome: "EQUADOR",
-        categoria:"LUGARES"
-    },
-    palavra003 = {
-        nome: "CHILE",
-        categoria:"LUGARES"
-    },
-    palavra004 = {
-        nome: "INDONESIA",
-        categoria:"LUGARES"
-    },
-    palavra005 = {
-        nome: "MALDIVAS",
-        categoria:"LUGARES"
-    },
-    palavra006 = {
-        nome: "INGLATERRA",
-        categoria:"LUGARES"
-    },
-    palavra007 = {
-        nome: "GROELANDIA",
-        categoria:"LUGARES"
-    },
-    palavra008 = {
-        nome: "UZBEQUISTAO",
-        categoria:"LUGARES"
-    },
-    palavra009 = {
-        nome: "INDONESIA",
-        categoria:"LUGARES"
-    },
-    palavra010 = {
-        nome: "CREGUENHEM",
-        categoria:"LUGARES"
-    },
-    palavra011 = {
-        nome: "BICICLETA",
-        categoria:"TRANSPORTE"
-    },
-    palavra012 = {
-        nome: "LANCHA",
-        categoria:"TRANSPORTE"
-    },
-    palavra013 = {
-        nome: "NAVIO",
-        categoria:"TRANSPORTE"
-    },
-    palavra014 = {
-        nome: "TELEFERICO",
-        categoria:"TRANSPORTE"
-    },
-    palavra015 = {
-        nome: "MOTOCICLETA",
-        categoria:"TRANSPORTE"
-    },
-    palavra016 = {
-        nome: "BARCO",
-        categoria:"TRANSPORTE"
-    },
-    palavra017 = {
-        nome: "AERONAVE",
-        categoria:"TRANSPORTE"
-    },
-    palavra018 = {
-        nome: "TREM",
-        categoria:"TRANSPORTE"
-    },
-    palavra019 = {
-        nome: "CAIAQUE",
-        categoria:"TRANSPORTE"
-    },
-    palavra020 = {
-        nome: "FUNICULAR",
-        categoria:"TRANSPORTE"
-    },
-    palavra021 = {
-        nome: "XICARA",
-        categoria:"OBJETOS"
-    },
-    palavra022 = {
-        nome: "MOEDA",
-        categoria:"OBJETOS"
-    },
-    palavra023 = {
-        nome: "ESPARADRAPO",
-        categoria:"OBJETOS"
-    },
-    palavra024 = {
-        nome: "SINO",
-        categoria:"OBJETOS"
-    },
-    palavra025 = {
-        nome: "CHUVEIRO",
-        categoria:"OBJETOS"
-    },
-    palavra026 = {
-        nome: "TAMBORETE",
-        categoria:"OBJETOS"
-    },
-    palavra027 = {
-        nome: "LAMPADA",
-        categoria:"OBJETOS"
-    },
-    palavra028 = {
-        nome: "BOCAL",
-        categoria:"OBJETOS"
-    },
-    palavra029 = {
-        nome: "CORTINA",
-        categoria:"OBJETOS"
-    },
-    palavra030 = {
-        nome: "LAPIS",
-        categoria:"OBJETOS"
-    },
-    palavra031 = {
-        nome: "MELANCIA",
-        categoria:"ALIMENTOS"
-    },
-    palavra032 = {
-        nome: "AMENDOIM",
-        categoria:"ALIMENTOS"
-    },
-    palavra033 = {
-        nome: "ESFIRRA",
-        categoria:"ALIMENTOS"
-    },
-    palavra034 = {
-        nome: "GOROROBA",
-        categoria:"ALIMENTOS"
-    },
-    palavra035 = {
-        nome: "JANTAR",
-        categoria:"ALIMENTOS"
-    },
-    palavra036 = {
-        nome: "SABOROSO",
-        categoria:"ALIMENTOS"
-    },
-    palavra037 = {
-        nome: "DESJEJUM",
-        categoria:"ALIMENTOS"
-    },
-    palavra038 = {
-        nome: "MASTIGAR",
-        categoria:"ALIMENTOS"
-    },
-    palavra039 = {
-        nome: "ENGOLIR",
-        categoria:"ALIMENTOS"
-    },
-    palavra040 = {
-        nome: "DOCERIA",
-        categoria:"ALIMENTOS"
-    },
-    palavra040 = {
-        nome: "DRAGAO",
-        categoria:"ANIMAIS"
-    },
-    palavra041 = {
-        nome: "GALINHA",
-        categoria:"ANIMAIS"
-    },
-    palavra042 = {
-        nome: "PAVAO",
-        categoria:"ANIMAIS"
-    },
-    palavra043 = {
-        nome: "CAMELO",
-        categoria:"ANIMAIS"
-    },
-    palavra044 = {
-        nome: "PERU",
-        categoria:"ANIMAIS"
-    },
-    palavra045 = {
-        nome: "ZEBRA",
-        categoria:"ANIMAIS"
-    },
-    palavra046 = {
-        nome: "DROMEDARIO",
-        categoria:"ANIMAIS"
-    },
-    palavra047 = {
-        nome: "CALANGO",
-        categoria:"ANIMAIS"
-    },
-    palavra048 = {
-        nome: "SAGUI",
-        categoria:"ANIMAIS"
-    },
-    palavra049 = {
-        nome: "LAGARTIXA",
-        categoria:"ANIMAIS"
-    },
-    palavra050 = {
-        nome: "HIPOPOTAMO",
-        categoria:"ANIMAIS"
-    }
+let palavras = [
+    {nome: "IRLANDA", categoria:"LUGARES"},
+    {nome: "EQUADOR", categoria:"LUGARES"},
+    {nome: "BRASIL", categoria:"LUGARES"},
+    {nome: "CHINA", categoria:"LUGARES"},
+    {nome: "ALEMANHA", categoria:"LUGARES"},
+    {nome: "AUSTRIA", categoria:"LUGARES"},
+    {nome: "RUSSIA", categoria:"LUGARES"},
+    {nome: "ARGENTINA", categoria:"LUGARES"},
+    {nome: "VENEZUELA", categoria:"LUGARES"},
+    {nome: "URUGUAI", categoria:"LUGARES"},
+    {nome: "MAÇA", categoria:"ALIMENTOS"},
+    {nome: "PERA", categoria:"ALIMENTOS"},
+    {nome: "MELANCIA", categoria:"ALIMENTOS"},
+    {nome: "MANGA", categoria:"ALIMENTOS"},
+    {nome: "UVA", categoria:"ALIMENTOS"},
+    {nome: "OVO", categoria:"ALIMENTOS"},
+    {nome: "CARNE", categoria:"ALIMENTOS"},
+    {nome: "FRANGO", categoria:"ALIMENTOS"},
+    {nome: "BANANA", categoria:"ALIMENTOS"},
+    {nome: "SALADA", categoria:"ALIMENTOS"},
+    {nome: "ARANHA", categoria:"ANIMAIS"},
+    {nome: "TIGRE", categoria:"ANIMAIS"},
+    {nome: "GATO", categoria:"ANIMAIS"},
+    {nome: "CACHORRO", categoria:"ANIMAIS"},
+    {nome: "MACACO", categoria:"ANIMAIS"},
+    {nome: "MORCEGO", categoria:"ANIMAIS"},
+    {nome: "ELEFANTE", categoria:"ANIMAIS"},
+    {nome: "GIRAFA", categoria:"ANIMAIS"},
+    {nome: "PEIXE", categoria:"ANIMAIS"},
+    {nome: "GAFANHOTO", categoria:"ANIMAIS"},
 ];
 
 const indexPalavra = parseInt(Math.random() * palavras.length)
-    
-    palavraSecretaSorteada = palavras[indexPalavra].nome;
-    palavraSecretaCategoria = palavras[indexPalavra].categoria;
+
+palavraSecretaSorteada = palavras[indexPalavra].nome;
+palavraSecretaCategoria = palavras[indexPalavra].categoria;
 
 let chances = 6;
 let acertos = 0;
@@ -217,6 +43,7 @@ let imagem = 0;
 
 let posicao;
 
+// CRIA OS ELEMENTOS SPAN NA DIV "PALAVRA"
 for (posicao = 0; posicao < palavraSecretaSorteada.length; posicao++) {
     let span = document.createElement("span");
     span.setAttribute('id', posicao);
@@ -225,6 +52,7 @@ for (posicao = 0; posicao < palavraSecretaSorteada.length; posicao++) {
     div.appendChild(span);
 }
 
+// CRIA OS BOTÕES COM AS LETRAS DO ALFABETO 
 let alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let letras = alfabeto.split("");
 
@@ -241,9 +69,10 @@ for (posicao = 0; posicao < letras.length; posicao++) {
     
 }
 
-    let temaName = document.createTextNode(palavraSecretaCategoria);
-    let telaElement = document.getElementById("tema");
-    telaElement.innerHTML = `TEMA: ${palavraSecretaCategoria}`; 
+    let nomeTema = document.createTextNode(palavraSecretaCategoria);
+    let elementoTema = document.getElementById("tema");
+    elementoTema.style.color = "#D21515";
+    elementoTema.innerHTML = `TEMA: ${palavraSecretaCategoria}`; 
     
     let btn = document.getElementById("input-btn")
     let btnLetras = document.getElementById("letras")
@@ -258,6 +87,48 @@ function desabilitarBotoes() {
         arrayBtnLetras[i].disabled = true
     }
     
+}
+
+function venceu() {
+    let mensagem = document.createElement("h2");
+    let t1 = document.createTextNode("Você venceu!");
+    mensagem.appendChild(t1);
+    mensagem.style.fontSize = "36px";
+    mensagem.style.fontWeight = "bold";
+    mensagem.style.color = "#00A41B";
+
+    let botao = document.createElement("button");
+    let t2 = document.createTextNode("jogar novamente");
+    
+    botao.appendChild(t2);
+    botao.setAttribute('class', 'novo-bt');
+    botao.setAttribute('onclick', 'window.location.reload()');
+
+    let div = document.getElementById("novo");
+    div.appendChild(mensagem);
+    div.appendChild(botao);
+
+}
+
+function perdeu() {
+    let mensagem = document.createElement("h2");
+    let t1 = document.createTextNode("Você perdeu!");
+    mensagem.appendChild(t1);
+
+    mensagem.style.fontSize = "36px";
+    mensagem.style.fontWeight = "bold";
+    mensagem.style.color = "#E31818";
+
+    let botao = document.createElement("button");
+    let t2 = document.createTextNode("jogar novamente");
+
+    botao.appendChild(t2);
+    botao.setAttribute('class', 'novo-bt');
+    botao.setAttribute('onclick', 'window.location.reload()');
+
+    let div = document.getElementById("novo");
+    div.appendChild(mensagem);
+    div.appendChild(botao);
 }
 
 function escolheLetra(letra) {
@@ -293,107 +164,48 @@ function escolheLetra(letra) {
     }
 
     if (chances === 0) {
-        let mensagem = document.createElement("h2");
-        let t1 = document.createTextNode("Você perdeu!");
-        mensagem.appendChild(t1);
-
-        mensagem.style.fontSize = "36px";
-        mensagem.style.fontWeight = "bold";
-        mensagem.style.color = "#E31818";
-        
-        let botao = document.createElement("button");
-        let t2 = document.createTextNode("jogar novamente");
-        
-        botao.appendChild(t2);
-        botao.setAttribute('class', 'novo-bt');
-        botao.setAttribute('onclick', 'window.location.reload()');
-
-        let div = document.getElementById("novo");
-        div.appendChild(mensagem);
-        div.appendChild(botao);
-
-        desabilitarBotoes()
+        perdeu();
+        desabilitarBotoes();
     }
 
     if (acertos === palavraSecretaSorteada.length) {
-        let mensagem = document.createElement("h2");
-        let t1 = document.createTextNode("Você venceu!");
-        mensagem.appendChild(t1);
-        mensagem.style.fontSize = "36px";
-        mensagem.style.fontWeight = "bold";
-        mensagem.style.color = "#00A41B";
-
-        let botao = document.createElement("button");
-        let t2 = document.createTextNode("jogar novamente");
-        
-        botao.appendChild(t2);
-        botao.setAttribute('class', 'novo-bt');
-        botao.setAttribute('onclick', 'window.location.reload()');
-
-        let div = document.getElementById("novo");
-        div.appendChild(mensagem);
-        div.appendChild(botao);
-
-        desabilitarBotoes()
+        venceu();
+        desabilitarBotoes();
     }
 }
 
-
-
+// BOTÃO FINALIZAR 
 btn.addEventListener("click", function(e){
     let acertou = false
-
+    
     e.preventDefault()
     let input = document.getElementById("input-style")
     let palavraDigitada = input.value
     if(palavraDigitada.toUpperCase() == palavraSecretaSorteada) {
-        let mensagem = document.createElement("h2");
-        let t1 = document.createTextNode("Você venceu!");
-        mensagem.appendChild(t1);
-        mensagem.style.fontSize = "36px";
-        mensagem.style.fontWeight = "bold";
-        mensagem.style.color = "#00A41B";
+        venceu();
         input.style.borderColor = "#00A41B";
         input.style.color = "#00A41B";
 
-        let botao = document.createElement("button");
-        let t2 = document.createTextNode("jogar novamente");
-        
-        botao.appendChild(t2);
-        botao.setAttribute('class', 'novo-bt');
-        botao.setAttribute('onclick', 'window.location.reload()');
-
-        let div = document.getElementById("novo");
-        div.appendChild(mensagem);
-        div.appendChild(botao);
         acertou = true
+
+        let arrayPalavra = palavraSecretaSorteada.split('')
+        
+        for(let n = 0; n < palavraSecretaSorteada.length; n++){
+            div = document.getElementById(n);
+            div.innerHTML = " "
+            let palavraNode = document.createTextNode(arrayPalavra[n])
+            div.style.color = "#00A41B"
+            div.appendChild(palavraNode)
+        }
 
         desabilitarBotoes()
 
     } else if(acertou == false) {
-        let mensagem = document.createElement("h2");
-        let t1 = document.createTextNode("Você perdeu!");
-        mensagem.appendChild(t1);
-
-        mensagem.style.fontSize = "36px";
-        mensagem.style.fontWeight = "bold";
-        mensagem.style.color = "#E31818";
+        perdeu();
         input.style.borderColor = "#E31818";
         input.style.color = "#E31818";
-
-        let botao = document.createElement("button");
-        let t2 = document.createTextNode("jogar novamente");
-        
-        botao.appendChild(t2);
-        botao.setAttribute('class', 'novo-bt');
-        botao.setAttribute('onclick', 'window.location.reload()');
-
-        let div = document.getElementById("novo");
-        div.appendChild(mensagem);
-        div.appendChild(botao);
 
         desabilitarBotoes()
 
     }
 })
-
